@@ -13,3 +13,19 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+Vue.component('my-component', {
+    name: 'my-component',
+    template: '<div>A custom component!</div>'
+});
+
+Vue.component('count', {
+    name: 'count',
+    props: ['test'],
+    data: function () {
+  return {
+    count: 0
+  }
+},
+    template: '<div>{{count}}{{test}}<button v-on:click="count++">Klicka mig</button></div>'
+});

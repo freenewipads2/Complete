@@ -1,6 +1,7 @@
 <template>
 <div class="game-wrapper">
 GAME!
+<count v-bind:test="msg"></count>
 </div>
 </template>
 <script>
