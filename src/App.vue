@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img v-if="ok" src="./assets/logo.png" width="80%">
     <router-view/>
   </div>
 </template>
@@ -8,7 +8,12 @@
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+    data () {
+    return {
+      ok: true
+    }
+    }
 }
 </script>
 
