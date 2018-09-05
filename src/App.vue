@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="fade-in">
     <img v-if="ok" src="./assets/logo.png" width="80%">
     <router-view/>
   </div>
+
 </template>
 
 <script>

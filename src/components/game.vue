@@ -1,4 +1,6 @@
+/* eslint-disable */
 <template>
+
 <div class="game-wrapper">
 GAME!
 <count v-bind:test="msg"></count>
