@@ -18,6 +18,18 @@ methods: {
   test(val){
     return "dumma dig! " + val
   }
+},
+created () {
+  console.warn('created', Date.now())
+},
+mounted () {
+  console.warn('mounted', Date.now())
+},
+beforeDestroy () {
+  console.warn('beforeDestroy', Date.now())
+},
+destroyed () {
+  console.warn('destroyed', Date.now())
 }
 }
 </script>
