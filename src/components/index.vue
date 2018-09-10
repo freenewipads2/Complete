@@ -30,9 +30,8 @@ import { Howl, Howler } from 'howler'
     },
 
     mounted: function () {
-  this.$nextTick(function () {
 
-var sound = new Howl({
+ this.sound = new Howl({
   src: ['http://niviso.com/test.mp3'],
   autoplay: true,
   loop: true,
@@ -41,9 +40,9 @@ var sound = new Howl({
     console.log('Finished!');
   }
 });
-
-
-  })
-}
+},
+beforeDestroy () {
+  this.sound.stop();
+},
   }
 </script>
